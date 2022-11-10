@@ -148,8 +148,8 @@ public class StudentManager implements CRUD, Serializable {
     public void sortAscending() {
         ArrayList<Student> student = (ArrayList<Student>) students.clone();
         student.sort(Comparator.comparing(Student::getAvg));
-        for (Student student1 : student) {
-            System.out.println(student1);
+        for (Student std : student) {
+            System.out.println(std);
         }
     }
 
